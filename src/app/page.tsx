@@ -1,4 +1,4 @@
-import TypewriterHero from '@/components/TypewriterHero';
+import TypewriterHero from '../components/TypewriterHero';
 
 export default function HomePage() {
   return (
