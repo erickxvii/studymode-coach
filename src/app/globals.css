@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- Pastel range slider tweaks --- */
+input[type="range"] {
+    @apply w-full h-2 rounded-lg bg-white/50 border border-white/60;
+    -webkit-appearance: none;
+    background: linear-gradient(to right, rgb(125 211 252 / 0.6), rgba(241, 159, 199, 0.852));
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 18px; width: 18px; border-radius: 9999px;
+    background: white;
+    box-shadow: 0 1px 4px rgba(0,0,0,.15);
+    border: 1px solid rgba(255,255,255,.6);
+    cursor: pointer;
+  }
+  input[type="range"]::-moz-range-thumb {
+    height: 18px; width: 18px; border-radius: 9999px;
+    background: white; border: 1px solid rgba(255,255,255,.6);
+    box-shadow: 0 1px 4px rgba(0,0,0,.15);
+    cursor: pointer;
+  }
+  html {
+    scroll-behavior:smooth;
+  }
+  
+  /* Session route: remove global glass shell so only timer shows */
+.session-page .app-shell {
+    background: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+  
